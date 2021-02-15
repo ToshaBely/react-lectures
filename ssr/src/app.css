@@ -1,0 +1,8 @@
+.section {
+  text-align: center;
+}
+
+.section__title {
+  font-size: 32px;
+  color: #888;
+}
