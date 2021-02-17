@@ -24,8 +24,8 @@ function createConfig({
     name: target,
     entry: join(src, target),
 
-    // mode: 'development',
-    mode: 'production',
+    mode: 'development',
+    // mode: 'production',
 
     output: {
       path: dist,
