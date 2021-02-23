@@ -27,14 +27,16 @@ function App() {
       {/* useCallback */}
       {/* <KnownResize /> */}
 
-      {/* Context */}
+      {/* useContext */}
       {/* <NotSoSimpleCounter lang="en" /> */}
       {/* <LangContext.Provider value='en'> */}
         {/* <ContextCounter /> */}
       {/* </LangContext.Provider> */}
 
-      {/* Ref */}
+      {/* useRef */}
       {/* <KnownWidthOnDemand /> */}
+
+      {/* useReducer */}
       {/* <DifficultState /> */}
 
       {/* Own hook */}
