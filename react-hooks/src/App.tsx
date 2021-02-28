@@ -29,7 +29,7 @@ function App() {
 
       {/* useContext */}
       {/* <NotSoSimpleCounter lang="en" /> */}
-      {/* <LangContext.Provider value='en'> */}
+      {/* <LangContext.Provider value='ru'> */}
         {/* <ContextCounter /> */}
       {/* </LangContext.Provider> */}
 

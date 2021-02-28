@@ -11,9 +11,9 @@ export const CounterWithTimer = function CounterWithTimer() {
       i++;
     }, 2000);
 
-    // return function cleanup() {
-    //   clearInterval(timer);
-    // };
+    return function cleanup() {
+      clearInterval(timer);
+    };
   }, [count]);
 
   useEffect(() => {

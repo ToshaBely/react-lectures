@@ -2,12 +2,12 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 
 export const KnownResize = function KnownResize() {
   let [count, setCount] = useState(1);
-  // let [width, setWidth] = useState(0);
+  let [width, setWidth] = useState(0);
 
   let onResize = useCallback(() => {
     console.log('Size changed, current count = ', count);
 
-    // setWidth(document.body.getBoundingClientRect().width);
+    setWidth(document.body.getBoundingClientRect().width);
   }, [count]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export const KnownResize = function KnownResize() {
   }, [onResize]);
 
   let factorial = useMemo(() => {
-    // console.log('[factorial calculation]');
+    console.log('[factorial calculation]');
 
     let result = 1;
 
@@ -30,7 +30,7 @@ export const KnownResize = function KnownResize() {
     return result;
   }, [count]);
 
-  // console.log('[render]:', width);
+  console.log('[render]:', width);
 
   return (
     <div>

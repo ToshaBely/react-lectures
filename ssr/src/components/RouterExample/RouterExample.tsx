@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 
-import { SecondsCounter } from './SecondsCounter';
-import { StaticHelloComponent } from './StaticHelloComponent';
+import { SecondsCounter } from '../SecondsCounter/SecondsCounter';
+import { StaticHelloComponent } from '../StaticHelloComponent/StaticHelloComponent';
 
 export const RouterExample: React.FC = function RouterExample() {
   

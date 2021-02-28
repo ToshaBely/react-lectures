@@ -5,11 +5,6 @@ const config = require('./webpack.common').createConfig({
 module.exports = {
   ...config,
 
-  output: {
-      ...config.output,
-      // libraryTarget: 'commonjs2',
-  },
-
   module: {
       ...config.module,
 

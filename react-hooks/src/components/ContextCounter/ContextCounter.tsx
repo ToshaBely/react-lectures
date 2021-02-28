@@ -13,7 +13,7 @@ export const ContextCounter = function ContextCounter() {
   return (
     <div>
       <h4>
-        NotSoSimpleCounter: {count}
+        ContextCounter: {count}
       </h4>
 
       <button

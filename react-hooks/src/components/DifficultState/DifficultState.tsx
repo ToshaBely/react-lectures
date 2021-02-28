@@ -26,14 +26,14 @@ export const DifficultState = function DifficultState() {
 
   let [wordCount, dispatch] = useReducer(wordCountReducer, 0);
 
-  let logInput = useCallback(() => {
+  let processInput = useCallback(() => {
     if (inputRef.current) {
       let inputValue = inputRef.current.value;
 
       if (inputValue) {
         let wordCount = inputValue.split(/ +/).length;
 
-        console.log(`You input ${inputValue}, word count = ${wordCount}`);
+        console.log(`You input "${inputValue}", word count = ${wordCount}`);
 
         dispatch({ type: 'add', payload: wordCount });
       }
@@ -56,7 +56,7 @@ export const DifficultState = function DifficultState() {
 
       <input ref={inputRef} />
 
-      <button onClick={logInput}>
+      <button onClick={processInput}>
         Add words from input
       </button>
 
